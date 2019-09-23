@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Character from "./Character";
 
 const CharacterList = props => {
@@ -6,7 +7,12 @@ const CharacterList = props => {
     return props.characters.map(characters => {
       return (
         <li key={characters.id}>
-          <Character characters={characters} />
+          <Link
+            to={`/character-detail/${characters.id}`}
+            className="charcterList_link"
+          >
+            <Character characters={characters} />
+          </Link>
         </li>
       );
     });

@@ -1,8 +1,10 @@
 import React from "react";
-import getDataFromApi from "../services/getDataFromApi";
-import CharacterList from "./CharacterList";
-// import Filters from "./Filters";
+import { Switch, Route } from "react-router-dom";
 import "../App.css";
+import Header from "./Header";
+import getDataFromApi from "../services/getDataFromApi";
+import Home from "./Home";
+import CharacterDetail from "./CharacterDetail";
 
 class App extends React.Component {
   constructor() {
@@ -33,13 +35,32 @@ class App extends React.Component {
     );
     return (
       <div className="page">
-        <form className="filter">
-          <label className="filter_label" htmlFor="filter">
-            Busca
-          </label>
-          <input type="text" onChange={this.handleFilter}></input>
-        </form>
-        <CharacterList characters={filteredCharacters} />
+        <Header />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => {
+              return (
+                <Home
+                  handleFilter={this.handleFilter}
+                  characters={filteredCharacters}
+                />
+              );
+            }}
+          />
+          <Route
+            path="/character-detail/:characterId"
+            render={routerProps => {
+              return (
+                <CharacterDetail
+                  routerProps={routerProps}
+                  characters={filteredCharacters}
+                />
+              );
+            }}
+          />
+        </Switch>
       </div>
     );
   }
