@@ -15,8 +15,8 @@
   }
   &_icons {
     position: absolute;
-    left: 282px;
-    top: 30px;
+    left: 57%;
+    top: 9%;
     @media (max-width: 750px) {
       left: 173px;
       top: 197px;
@@ -36,6 +36,7 @@
     justify-content: center;
     margin-left: 20px;
     font-family: "Turret Road", cursive;
+    width: 155px;
     @media (max-width: 750px) {
       margin: 20px 0px 0 0;
     }
