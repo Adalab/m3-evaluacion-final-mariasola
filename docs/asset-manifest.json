@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.1b5c7e63.chunk.css",
+    "main.css": "./static/css/main.afe3cebe.chunk.css",
     "main.js": "./static/js/main.555d801d.chunk.js",
     "main.js.map": "./static/js/main.555d801d.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.bdc51ec1.js",
@@ -8,9 +8,9 @@
     "static/js/2.80f44211.chunk.js": "./static/js/2.80f44211.chunk.js",
     "static/js/2.80f44211.chunk.js.map": "./static/js/2.80f44211.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.9a8bd53e2904528dca903c4c9cf0b358.js": "./precache-manifest.9a8bd53e2904528dca903c4c9cf0b358.js",
+    "precache-manifest.a33e7007333a0c07c891f68bbebb1b82.js": "./precache-manifest.a33e7007333a0c07c891f68bbebb1b82.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.1b5c7e63.chunk.css.map": "./static/css/main.1b5c7e63.chunk.css.map",
+    "static/css/main.afe3cebe.chunk.css.map": "./static/css/main.afe3cebe.chunk.css.map",
     "static/media/rickandMortyLogo.png": "./static/media/rickandMortyLogo.15c5ace1.png"
   }
 }
