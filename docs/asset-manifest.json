@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.afe3cebe.chunk.css",
-    "main.js": "./static/js/main.555d801d.chunk.js",
-    "main.js.map": "./static/js/main.555d801d.chunk.js.map",
+    "main.css": "./static/css/main.56dbbc13.chunk.css",
+    "main.js": "./static/js/main.fd2577c8.chunk.js",
+    "main.js.map": "./static/js/main.fd2577c8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.bdc51ec1.js",
     "runtime-main.js.map": "./static/js/runtime-main.bdc51ec1.js.map",
     "static/js/2.80f44211.chunk.js": "./static/js/2.80f44211.chunk.js",
     "static/js/2.80f44211.chunk.js.map": "./static/js/2.80f44211.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.a33e7007333a0c07c891f68bbebb1b82.js": "./precache-manifest.a33e7007333a0c07c891f68bbebb1b82.js",
+    "precache-manifest.72577663187bad6a7dbd4bf35545f81a.js": "./precache-manifest.72577663187bad6a7dbd4bf35545f81a.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.afe3cebe.chunk.css.map": "./static/css/main.afe3cebe.chunk.css.map",
+    "static/css/main.56dbbc13.chunk.css.map": "./static/css/main.56dbbc13.chunk.css.map",
     "static/media/rickandMortyLogo.png": "./static/media/rickandMortyLogo.15c5ace1.png"
   }
 }
