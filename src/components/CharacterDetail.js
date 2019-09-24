@@ -6,12 +6,36 @@ const CharacterDetail = props => {
   const { routerProps, characters } = props;
   const characterId = parseInt(routerProps.match.params.characterId);
   const character = characters.filter(item => item.id === characterId);
+  const renderIcons = character => {
+    let status;
+    let species;
+    if (character.status === "Dead") {
+      status = " 💀";
+    } else if (character.status === "Alive") {
+      status = " ♡";
+    } else {
+      status = " ❔";
+    }
+    if (character.species === "Human") {
+      species = " 👤";
+    } else if (character.species === "Alien") {
+      species = " 👽";
+    }
+    return (
+      <p>
+        {status}
+        {species}
+      </p>
+    );
+  };
   if (character[0]) {
-    const { name, image, status, species, origin, episode } = character[0];
-
+    const { name, image, species, status, origin, episode } = character[0];
     return (
       <React.Fragment>
         <div className="character_detail">
+          <div className="character_detail_icons">
+            {renderIcons(character[0])}
+          </div>
           <div className="character_detail_box">
             <img className="character_detail_box_img" alt={name} src={image} />
           </div>
