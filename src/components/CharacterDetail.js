@@ -12,17 +12,23 @@ const CharacterDetail = props => {
     return (
       <React.Fragment>
         <div className="character_detail">
-          <img className="character_detail_img" alt={name} src={image} />
-          <h2 className="character_detail_name">{name}</h2>
-          <p className="character_detail_status">Status: {status}</p>
-          <p className="character_detail_species">Species: {species}</p>
-          <p className="character_detail_species">Origin: {origin.name}</p>
-          <ul className="character_detail_episodes">
-            Episodes: {episode.length}
-          </ul>
+          <div className="character_detail_box">
+            <img className="character_detail_box_img" alt={name} src={image} />
+          </div>
+          <div className="character_detail_info">
+            <h2 className="character_detail_info_name">{name}</h2>
+            <p className="character_detail_info_status">Status: {status}</p>
+            <p className="character_detail_info_species">Species: {species}</p>
+            <p className="character_detail_info_species">
+              Origin: {origin.name}
+            </p>
+            <p className="character_detail_info_episodes">
+              Episodes: {episode.length}
+            </p>
+          </div>
         </div>
         <Link to="/" className="app__back">
-          &laquo; Volver
+          &larr; Back to the list
         </Link>
       </React.Fragment>
     );
@@ -31,7 +37,7 @@ const CharacterDetail = props => {
       <React.Fragment>
         <p>Cargando...</p>
         <Link to="/" className="app__back">
-          &laquo; Volver al listado
+          &larr; Back to the list
         </Link>
       </React.Fragment>
     );

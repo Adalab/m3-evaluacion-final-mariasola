@@ -6,10 +6,10 @@ const CharacterList = props => {
   const renderList = () => {
     return props.characters.map(characters => {
       return (
-        <li key={characters.id}>
+        <li className="charctersList_li" key={characters.id}>
           <Link
             to={`/character-detail/${characters.id}`}
-            className="charcterList_link"
+            className="charctersList_li_link"
           >
             <Character characters={characters} />
           </Link>
@@ -17,7 +17,7 @@ const CharacterList = props => {
       );
     });
   };
-  return <ul className="charactersList">{renderList()}</ul>;
+  return <ul className="charctersList">{renderList()}</ul>;
 };
 
 export default CharacterList;

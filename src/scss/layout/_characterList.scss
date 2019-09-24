@@ -1,0 +1,15 @@
+.charctersList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  &_li {
+    list-style: none;
+    margin: 30px;
+    &_link {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

@@ -8,8 +8,10 @@ const Character = props => {
         alt="rick and morty character"
         src={props.characters.image}
       />
-      <h2 className="character_name">{props.characters.name}</h2>
-      <p className="character_model">{props.characters.species}</p>
+      <div className="character_info">
+        <h2 className="character_info_name">{props.characters.name}</h2>
+        <p className="character_info_model">{props.characters.species}</p>
+      </div>
     </div>
   );
 };

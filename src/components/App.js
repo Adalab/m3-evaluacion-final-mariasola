@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "../App.css";
+import "../scss/App.scss";
 import Header from "./Header";
 import getDataFromApi from "../services/getDataFromApi";
 import Home from "./Home";

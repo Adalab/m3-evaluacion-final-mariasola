@@ -1,0 +1,14 @@
+@import "layout/header";
+@import "layout/characterList";
+@import "layout/characterDetail";
+@import "layout/character";
+@import "layout/filters";
+
+body {
+  margin: 0px;
+  background: #f04545;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}

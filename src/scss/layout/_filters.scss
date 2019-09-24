@@ -1,0 +1,13 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  &_input {
+    background: transparent;
+    border: #69cf54 solid 2px;
+    height: 25px;
+    width: 260px;
+    margin-top: 15px;
+  }
+}
